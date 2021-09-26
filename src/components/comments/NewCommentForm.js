@@ -23,8 +23,6 @@ const NewCommentForm = (props) => {
 
     const text = commentTextRef.current.value;
 
-    // optional: Could validate here
-
     sendRequest({ commentData: { text: text }, quoteID: props.quoteID });
   };
 
