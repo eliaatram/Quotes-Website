@@ -1,7 +1,5 @@
-.form {
-  margin-top: 1rem;
+form {
   position: relative;
-  text-align: center;
 }
 
 .loading {
@@ -22,8 +20,10 @@
   font-weight: bold;
   display: block;
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
+.control input,
 .control textarea {
   font: inherit;
   padding: 0.35rem;
@@ -35,9 +35,14 @@
   font-size: 1.25rem;
 }
 
+.control input:focus,
 .control textarea:focus {
   background-color: #cbf8f8;
   outline-color: teal;
+}
+
+.actions {
+  text-align: right;
 }
 
 .actions button {
